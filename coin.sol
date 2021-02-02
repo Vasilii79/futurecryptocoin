@@ -67,7 +67,7 @@ contract ApproveAndCallFallBack {
 /**
 ERC20 Token, with the addition of symbol, name and decimals and assisted token transfers
 */
-contract LCSTToken is ERC20Interface, SafeMath {
+contract FUTCoin is ERC20Interface, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -123,9 +123,6 @@ contract LCSTToken is ERC20Interface, SafeMath {
     // Token owner can approve for spender to transferFrom(...) tokens
     // from the token owner's account
     //
-    // https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20-token-standard.md
-    // recommends that there are no checks for the approval double-spend attack
-    // as this should be implemented in user interfaces 
     // ------------------------------------------------------------------------
     function approve(address spender, uint tokens) public returns (bool success) {
         allowed[msg.sender][spender] = tokens;
