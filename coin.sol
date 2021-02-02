@@ -3,7 +3,7 @@ contract Token {
 // ----------------------------------------------------------------------------
 // FUT ERC20 Token
 //
-// Symbol        : FUT
+// Symbol        : FCOIN
 // Name          : Future Crypto Coin
 // Total supply  : 10000000000
 // Decimals      : 18
@@ -125,10 +125,10 @@ string public version = 'B1.0';
 function FUTCoin(
 ) {
 balances[msg.sender] = 10000000000;               // Give the creator all initial tokens (100000 for example)
-totalSupply = 10000000000;                        // Update total supply (100000 for example)
+totalSupply = 10000000000000000000000000000;                        // Update total supply (100000 for example)
 name = "Future Crypto Coin";                                   // Set the name for display purposes
 decimals = 18;                            // Amount of decimals for display purposes
-symbol = "FUT";                               // Set the symbol for display purposes
+symbol = "FCOIN";                               // Set the symbol for display purposes
 }
 
 /* Approves and then calls the receiving contract */
